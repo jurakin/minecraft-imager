@@ -84,7 +84,7 @@ print("Imager is running ...")
 
 d1 = time.time()
 
-for y, row in enumerate(bitmap):
+for y, row in enumerate(instructions):
     for x, block in enumerate(row):
         block_coors = OFFSET_X + x, OFFSET_Y + y, OFFSET_Z
 
