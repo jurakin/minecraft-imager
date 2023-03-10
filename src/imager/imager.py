@@ -20,7 +20,7 @@ class Imager:
     def translate(self):
         instructions = "["
         
-        for row in self.pixelated_bitmap:
+        for row in self.pixelated_bitmap[::-1]:
             instructions += "[" + ",".join(map(str, row)) + "],"
         
         instructions += "]"
